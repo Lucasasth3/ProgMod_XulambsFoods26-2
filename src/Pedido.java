@@ -5,9 +5,9 @@ public class Pedido {
     private static int ultimoPedido;
     private LocalDate data;
     private LinkedList<Pizza> pizzas;
-    private int idPedido;
+    private int idPedido = 0;
     private boolean aberto;
-
+    
     public Pedido(){
         ultimoPedido++;
         data = LocalDate.now();
